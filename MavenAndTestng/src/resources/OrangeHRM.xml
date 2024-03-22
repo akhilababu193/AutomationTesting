@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<suite name = "DemoSuite">
+    <parameter name = "browserName" value = "Chrome"/>
+    <parameter name = "url" value = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
+    <parameter name = "uname" value = "Admin"/>
+    <parameter name = "pass" value="admin123"/>
+    <test name = "Login">
+        <classes>
+            <class name = "OrangeHRM">
+                <methods>
+                    <include name = "launchUrl"/>
+                    <include name = "loginOrangeHRM"/>
+                    <include name = "verifyLogin"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
